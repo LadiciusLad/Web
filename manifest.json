@@ -1,7 +1,7 @@
 {
-  "name": "AboMakiye",
-  "short_name": "Makiye",
-  "description": "Resto project",
+  "name": "austweb",
+  "short_name": "aust",
+  "description": "webProject",
   "icons": [{
     "src": "media/brand/logo-512x512.png",
     "sizes": "512x512",
