@@ -44,7 +44,7 @@
                 <a class="dropdown-item" href="pages/food.html">Food</a>
                 <a class="dropdown-item" href="pages/desserts.html">Desserts</a>
                 <a class="dropdown-item" href="pages/drinks.html">Drinks</a>
-                <a class="dropdown-item" href="pages/showfood.html">Show Food</a>
+                <a class="dropdown-item" href="pages/showfood.php">Show Food</a>
               </div>
             </li>
             <li class="nav-item">
