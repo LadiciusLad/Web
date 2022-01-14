@@ -8,7 +8,7 @@
     <!-- Web app manifest -->
     <link rel='manifest' href='../manifest.json'>
     <!-- Font Awesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/d994108362.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
@@ -50,7 +50,7 @@
             <li class="nav-item">
               <a class="nav-link" href="album.html">Album</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="reservations.html">Reservations</a>
             </li>
             <li class="nav-item">
@@ -61,7 +61,7 @@
             <a class="nav-social mr-2" href="https://github.com/LadiciusLad"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             <a class="nav-social mr-2" href="https://github.com/LadiciusLad"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             <a class="nav-social" href="https://github.com/LadiciusLad"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-            <a class="nav-social" href="/pages/adminLogin.html"><i class="fab fa-sketch" aria-hidden="true"></i></i></a>
+            <a class="nav-social mr-2" href="/pages/adminLogin.html"><i class="fab fa-sketch" aria-hidden="true"></i></a>
           </div>
         </div>
       </nav>
@@ -70,12 +70,9 @@
 
       <!-- RESERVATIONS DESCRIPTION -->
       <div class="reservations-description container">
-        <h1 id="title-1" class="special-title-1">RESERVATIONS</h1>
-        <h2 id="title-2" class="special-title-2">Book a Table</h2>
+        <h1 id="title-1" class="special-title-1">Administrator</h1>
+        <h2 id="title-2" class="special-title-2">Login as Admin</h2>
         <p id="description" class="mb-0">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et 
-          consequat augue. Morbi condimentum interdum magna sit amet pulvinar. 
-          Vestibulum in dolor egestas, vestibulum quam sit amet, feugiat neque. 
         </p>
       </div>
 
@@ -108,42 +105,22 @@
           src="https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_2560/v1536179526/website-template-3/cover-reservations.jpg"
           alt=""
           class="reservations-form-bg">
-        <form>
+        <form name="loginForm" action="adminDashboard.html" method="post" onsubmit="return validateForm()">
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label for="inputName">NAME:</label>
-              <input type="text" class="form-control" id="inputName" placeholder="John Smith">
-            </div>
-            <div class="form-group col-md-6">
-              <label for="inputEmail">EMAIL:</label>
-              <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com">
+              <label for="inputUsername">Username</label>
+              <input type="text" name="uname"class="form-control" id="inputUsername" placeholder="Username">
             </div>
           </div>
           <div class="form-row">
-            <div class="form-group col-md-5">
-              <label for="inputDate">DATE:</label>
-              <input type="date" class="form-control" id="inputDate">
-            </div>
-            <div class="form-group col-md-2">
-              <label for="inputNumber">PARTY OF:</label>
-              <input type="number" min="1" class="form-control" id="inputNumber" placeholder="1">
-            </div>
-            <div class="form-group col-md-5">
-              <label for="inputPhone">PHONE:</label>
-              <input type="tel" class="form-control" id="inputPhone" placeholder="99123456">
+            <div class="form-group col-md-6">
+                <label for="inputPassword">Password:</label>
+                <input type="password" name="password"class="form-control" id="inputPassword" placeholder="Password">
             </div>
           </div>
-          <div class="form-group">
-            <label for="inputTextarea">MESSAGE:</label>
-            <textarea class="form-control" id="inputTextarea" rows="7" placeholder="Additional details"></textarea>
-          </div>
-          <button type="submit" class="btn btn-light">SUBMIT</button>
+          <button type="submit" onclick="validate()" class="btn btn-light">Login</button>
         </form>
       </div>
-
-      <!-- GOOGLE MAP -->
-           
-
     </main>
     <footer class="page-footer">
       <div class="container">
@@ -206,12 +183,22 @@
       crossorigin="anonymous">
     </script>
     <!-- Bootstrap -->
-    <script 
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
-      crossorigin="anonymous">
+    <script>
+        
+    function validateForm() {
+    let x = document.forms["loginForm"]["uname"].value;
+    let y = document.forms["loginForm"]["password"].value;
+    if (x == "admin" && y=="admin") {
+        alert("Login Successfull");
+        return true;
+    }
+    else return false;
+}
+
     </script>
+    
     <script src="../js/site.js"></script>
     <script src="../js/reservations-animations.js"></script>
+    
   </body>
 </html>
