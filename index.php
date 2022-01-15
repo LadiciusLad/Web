@@ -37,14 +37,13 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="pages/food.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="pages/food.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Menu
               </a>
               <div class="dropdown-menu text-center text-lg-left" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="pages/food.html">Food</a>
-                <a class="dropdown-item" href="pages/desserts.html">Desserts</a>
-                <a class="dropdown-item" href="pages/drinks.html">Drinks</a>
-                <a class="dropdown-item" href="pages/showfood.php">Show Food</a>
+                <a class="dropdown-item" href="pages/food.php">Food</a>
+                <a class="dropdown-item" href="pages/desserts.php">Desserts</a>
+                <a class="dropdown-item" href="pages/drinks.php">Drinks</a>
               </div>
             </li>
             <li class="nav-item">
@@ -64,7 +63,7 @@
             <a class="nav-social mr-2" href="https://github.com/LadiciusLad"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             <a class="nav-social mr-2" href="https://github.com/LadiciusLad"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             <a class="nav-social" href="https://github.com/LadiciusLad"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-            <a class="nav-social" href="/pages/adminLogin.html"><i class="fab fa-sketch" aria-hidden="true"></i></i></a>
+            <a class="nav-social" href="/web/pages/adminLogin.php"><i class="fab fa-sketch" aria-hidden="true"></i></i></a>
           </div>
         </div>
       </nav>
@@ -246,7 +245,7 @@
               <p class="homepage-menu-description">
                 Ta3a tba2at 3enna
               </p>
-              <a class="btn btn-outline-dark" href="pages/food.html" role="button">VIEW MENU</a>
+              <a class="btn btn-outline-dark" href="pages/food.php" role="button">VIEW MENU</a>
             </div>
           </div>
           <div class="col-md-4 homepage-desserts">
@@ -263,7 +262,7 @@
               <p class="homepage-menu-description">
                 Ta3a t7alla 3enna
               </p>
-              <a class="btn btn-outline-dark" href="pages/desserts.html" role="button">VIEW MENU</a>
+              <a class="btn btn-outline-dark" href="pages/desserts.php" role="button">VIEW MENU</a>
             </div>
           </div>
           <div class="col-md-4 homepage-drinks">
@@ -280,7 +279,7 @@
               <p class="homepage-menu-description">
                Teshrab samm elehe
               </p>
-              <a class="btn btn-outline-dark" href="pages/drinks.html" role="button">VIEW MENU</a>
+              <a class="btn btn-outline-dark" href="pages/drinks.php" role="button">VIEW MENU</a>
             </div>
           </div>
         </div>
@@ -544,7 +543,7 @@
     <footer class="page-footer">
       <div class="container">
         <a class="navbar-brand animated pulse d-block text-center m-0 p-0" href="#">
-          <img src="media/brand/logo-light.svg" width="50" height="50" alt="Logo">
+          <img src="media/brand/logo-512x512.png" width="50" height="50" alt="Logo">
         </a>
         <div class="row">
           <div class="col-md-3">
@@ -569,7 +568,7 @@
             <h5 class="page-footer-title mt-3 mt-md-0">FOLLOW US</h5>
             <div class="mb-3">
               <a class="footer-social" href="https://github.com/LadiciusLad" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-              <a class="footer-social" href="https://github.com/LadiciusLad" aria-label="tripadvisor"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+              
               <a class="footer-social" href="https://github.com/LadiciusLad" aria-label="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             </div>
           </div>

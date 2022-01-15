@@ -1,17 +1,17 @@
 var  cacheName = 'grecko-cache';
 
-// Beware that index.html may also be requested as (/)
+// Beware that index.php may also be requested as (/)
 var filesToCache = [
   '/website-template-3/',
   '/website-template-3/about.html',
   '/website-template-3/album.html',
   '/website-template-3/contact.html',
-  '/website-template-3/desserts.html',
-  '/website-template-3/drinks.html',
-  '/website-template-3/food.html',
-  '/website-template-3/gallery-desserts.html',
-  '/website-template-3/gallery-drinks.html',
-  '/website-template-3/gallery-food.html',
+  '/website-template-3/desserts.php',
+  '/website-template-3/drinks.php',
+  '/website-template-3/food.php',
+  '/website-template-3/gallery-desserts.php',
+  '/website-template-3/gallery-drinks.php',
+  '/website-template-3/gallery-food.php',
   '/website-template-3/gallery-location.html',
   '/website-template-3/gallery-staff.html',
   '/website-template-3/reservations.html',

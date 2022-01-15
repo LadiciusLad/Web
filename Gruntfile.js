@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     purifycss: {
       options: {},
       target: {
-        src: ['src/index.html', 'src/pages/*.html', 'src/js/*.js'],
+        src: ['src/index.php', 'src/pages/*.html', 'src/js/*.js'],
         css: ['src/css/*.css'],
         dest: 'dist/css/purestyles.css'
       },
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
       t2: {
         expand: true,
         cwd: 'src/',
-        src: 'index.html',
+        src: 'index.php',
         dest: 'dist/'
       },
       t3: {
@@ -71,8 +71,8 @@ module.exports = function(grunt) {
           width: 1920,
           height: 1080
         },
-        src: 'dist/index.html',
-        dest: 'dist/index.html'
+        src: 'dist/index.php',
+        dest: 'dist/index.php'
       },
       t2: {
         options: {
@@ -109,7 +109,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'dist/',
-          src: 'index.html',
+          src: 'index.php',
           dest: 'dist/'
         }]
       }

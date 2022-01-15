@@ -17,7 +17,7 @@ grunt uglify
 grunt copy
 
 perl -0pi -e 's/    <!-- Bootstrap -->\n    <link rel="stylesheet" href="..\/css\/bootstrap.css">\n    <!-- Animate.css -->\n    <link rel="stylesheet" href="..\/css\/animate.css">\n    <!-- Default stylesheet -->\n    <link rel="stylesheet" href="..\/css\/main.css">/    <link rel="stylesheet" href="..\/css\/purestyles.css">/' dist/pages/*.html  
-perl -0pi -e 's/    <!-- Bootstrap -->\n    <link rel="stylesheet" href="css\/bootstrap.css">\n    <!-- Animate.css -->\n    <link rel="stylesheet" href="css\/animate.css">\n    <!-- Default stylesheet -->\n    <link rel="stylesheet" href="css\/main.css">/    <link rel="stylesheet" href="css\/purestyles.css">/' dist/index.html  
+perl -0pi -e 's/    <!-- Bootstrap -->\n    <link rel="stylesheet" href="css\/bootstrap.css">\n    <!-- Animate.css -->\n    <link rel="stylesheet" href="css\/animate.css">\n    <!-- Default stylesheet -->\n    <link rel="stylesheet" href="css\/main.css">/    <link rel="stylesheet" href="css\/purestyles.css">/' dist/index.php  
  
 grunt critical
 

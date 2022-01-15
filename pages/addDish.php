@@ -1,10 +1,25 @@
+<?php
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+include_once('/xampp/phpMyAdmin/htdocs/web/includes/dbh.php');
+$food_name = $_POST['name'];
+$food_type = $_POST['type'];
+$food_price = $_POST['price'];
+$food_subtype = $_POST['subtype'];
+
+if(isset($_POST['submit']))
+    {
+      $sql = "INSERT INTO food (food_name,food_price,food_type,food_subtype)VALUES('$food_name','$food_price','$food_type','$food_subtype');";
+      mysqli_query($conn, $sql);
+    }
+
+?>
 <!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>AUST Bar &amp; Restaurant | Free Bootstrap Website Template</title>
+    <title>AUST Bar &amp; Restaurant</title>
     <!-- Web app manifest -->
     <link rel='manifest' href='../manifest.json'>
     <!-- Font Awesome -->
@@ -23,8 +38,8 @@
     <header>
       <!-- NAVBAR -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand animated pulse" href="../index.html">
-          <img src="../media/brand/logo-512x512.png" width="30" height="30" alt="Logo">
+        <a class="navbar-brand animated pulse" href="../index.php">
+          <img src="/web/media/brand/logo-512x512.png" width="30" height="30" alt="Logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -32,16 +47,16 @@
         <div class="collapse navbar-collapse text-center" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="../index.php">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="food.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="food.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Menu
               </a>
               <div class="dropdown-menu text-center text-lg-left" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="food.html">Food</a>
-                <a class="dropdown-item" href="desserts.html">Desserts</a>
-                <a class="dropdown-item" href="drinks.html">Drinks</a>
+                <a class="dropdown-item" href="food.php">Food</a>
+                <a class="dropdown-item" href="desserts.php">Desserts</a>
+                <a class="dropdown-item" href="drinks.php">Drinks</a>
               </div>
             </li>
             <li class="nav-item">
@@ -61,7 +76,7 @@
             <a class="nav-social mr-2" href="https://github.com/LadiciusLad"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             <a class="nav-social mr-2" href="https://github.com/LadiciusLad"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             <a class="nav-social" href="https://github.com/LadiciusLad"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-            <a class="nav-social mr-2" href="/pages/adminLogin.html"><i class="fab fa-sketch" aria-hidden="true"></i></i></a></span>
+            <a class="nav-social mr-2" href="/web/pages/adminLogin.php"><i class="fab fa-sketch" aria-hidden="true"></i></i></a></span>
           </div>
         </div>
       </nav>
@@ -76,17 +91,17 @@
         </p>
       </div>
       <!-- RESERVATIONS FORM -->
-        <form>
+        <form method = post>
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="dishName">Dish Name:</label>
-              <input type="text" class="form-control" id="inputName" placeholder="John Smith">
+              <input name = "name" type="text" class="form-control" id="inputName" placeholder="Pizza">
             </div>
           </div>    
           <div class="form-row">
             <div class="form-group col-md-5">
               <label for="inputPrice">Price:</label>
-              <input type="tel" class="form-control" id="inputPrice" placeholder="4$">
+              <input type="number" name="price" class="form-control" id="inputPrice" placeholder="4$">
             </div>
           </div>
           <div class="form-group col-md-5">
@@ -95,20 +110,42 @@
                 <option value="drink">Drink</option>
                 <option value="food">Food</option>
                 <option value="dessert">Dessert</option>
-
-
             </select>
-
           </div>
-          <button type="submit" class="btn btn-light">SUBMIT</button>
+          <div class="form-group col-md-5">
+            <label for="inputType">Dish Sub Type</label>
+            <select id= "subtype" name ="subtype">
+                <option value="breakfast">Breakfast</option>
+                <option value="burgers">Burgers</option>
+                <option value="pasta">Pasta</option>
+                <option value="pizzas">Pizzas</option>
+                <option value="pies">Pies</option>
+                <option value="salads">Salads</option>
+                <option value="seafood">Sea Food</option>
+                <option value="cakes">Cakes</option>
+                <option value="cookies">Cookies</option>
+                <option value="frozendesserts">Frozen Desserts</option>
+                <option value="puddings">Puddings</option>
+                <option value="pastries">Pastries</option>
+                <option value="beers">Beers</option>
+                <option value="coldbeverages">Cold Beverages</option>
+                <option value="hotbeverages">Hot Beverages</option>
+                <option value="milkshakes">Milkshakes</option>
+                <option value="spirits">Spirits</option>
+                <option value="wines">Wines</option>
+                
+
+                
+            </select>
+          </div>
+          <button type="submit" value = "SUBMIT" name="submit" class="btn btn-light">Add Dish</button>
         </form>
-      </div>
 
     </main>
     <footer class="page-footer">
       <div class="container">
         <a class="navbar-brand animated pulse d-block text-center m-0 p-0" href="#">
-          <img src="../media/brand/logo-light.svg" width="50" height="50" alt="Logo">
+          <img src="../media/brand/logo-512x512.png" width="50" height="50" alt="Logo">
         </a>
         <div class="row">
           <div class="col-md-3">
@@ -133,7 +170,7 @@
             <h5 class="page-footer-title mt-3 mt-md-0">FOLLOW US</h5>
             <div class="mb-3">
               <a class="footer-social" href="https://github.com/LadiciusLad" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-              <a class="footer-social" href="https://github.com/LadiciusLad" aria-label="tripadvisor"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+              
               <a class="footer-social" href="https://github.com/LadiciusLad" aria-label="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             </div>
           </div>
