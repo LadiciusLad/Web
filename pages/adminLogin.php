@@ -1,3 +1,12 @@
+<style>
+.main
+{
+  text-align: center;
+  align-content: center;
+
+}
+
+</style>
 <?php 
     error_reporting(E_ERROR | E_WARNING | E_PARSE);
     $uname = $_POST['uname'];
@@ -107,6 +116,7 @@
     <main>
 
       <!-- RESERVATIONS DESCRIPTION -->
+      <div class="main">
       <div class="reservations-description container">
         <h1 id="title-1" class="special-title-1">Administrator</h1>
         <h2 id="title-2" class="special-title-2">Login as Admin</h2>
@@ -131,8 +141,7 @@
           <button type="submit" value = "LOGIN" name="submit" class="btn btn-light">Login</button>
             
         </form>
-        
-        
+        </div>
       </div>
     </main>
     <footer class="page-footer">

@@ -1,12 +1,64 @@
+<style>
+.button {
+    background-color: #008CBA; /* Blue */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.editButton
+{
+    padding-left: 100%;
+    float:initial;
+
+}
+.food-name
+{
+    margin-right: 80px !important;
+}
+.mainForum
+{
+  text-align: center;
+  align-items: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top:10%;
+  margin-bottom: 10%;
+}
+.qrcode
+{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+</style>
+
 
 <?php
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
-if($_COOKIE['isLogged']=="False")
-{
-  header("Location: adminLogin.php");
-}
+include_once('/xampp/phpMyAdmin/htdocs/web/includes/dbh.php');
+$food_name = $_POST['name'];
+$food_type = $_POST['type'];
+$food_price = $_POST['price'];
+$food_subtype = $_POST['subtype'];
+$food_description = $_POST['description'];
+$id = $_GET['varname'];
 
+
+
+if(isset($_POST['submit']))
+    {
+      header("Location: /web/pages/modifyDish.php");
+
+    }
+    
 ?>
+<!doctype html>
+
 <!doctype html>
 <html lang="en">
     <head>
@@ -44,7 +96,7 @@ if($_COOKIE['isLogged']=="False")
               <a class="nav-link" href="/web/index.php">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="/pages/food.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="/web/pages/food.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Menu
               </a>
               <div class="dropdown-menu text-center text-lg-left" aria-labelledby="navbarDropdown">
@@ -76,36 +128,30 @@ if($_COOKIE['isLogged']=="False")
       </nav>
     </header>
     <main>
+    <?php
 
+$sql = "SELECT * FROM `food` WHERE id ='$id'";
+$result = mysqli_query($conn, $sql);
+$resultCheck = mysqli_num_rows($result);
+$row = mysqli_fetch_assoc($result);
+?>
+<div class="mainForum">
+<h3 class="special-title-2"><?php echo $row["food_name"];?></h3>
+<h4>Name : <?php echo $row["food_name"];?></h4><br>
+<h4>Price :  <?php echo $row["food_price"];?> $</h4><br>
+<h4>Type : <?php echo $row["food_type"];?></h4><br>
+<h4>Sub Type : <?php echo $row["food_subtype"];?></h4><br>
+<h4>Description : <?php echo $row["food_description"];?></h4><br>
+<img class="qrcode"src="/web/qrcode/<?php echo$row["id"]?>.jpg" width="300" height="300"><br> 
+<button class="button button2" id="oderbtn" onclick="order()">Order</button>
 
-      <!-- Dashboard -->
-      <div class="homepage-menu container text-center">
-        <div class="row">
-          <div class="col-md-4 homepage-food">
-            <h3 class="special-title-2">Add Dish</h3>
-            <div id="food">
-             
-              <a class="btn btn-outline-dark" href="/web/pages/addDish.php" role="button">Go</a>
-            </div>
-          </div>
-          <div class="col-md-4 homepage-desserts"></div>
-          <div class="col-md-4 homepage-desserts">
-            <h3 class="special-title-2">Modify Dish</h3>
-            <div id="desserts">
-              
-              <a class="btn btn-outline-dark" href="/web/pages/modifyDish.php" role="button">Go</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    
+  </div>
     </main>
 
     <footer class="page-footer">
       <div class="container">
         <a class="navbar-brand animated pulse d-block text-center m-0 p-0" href="#">
-          <img src="/web/media/brand/logo-512x512.png" width="50" height="50" alt="Logo">
+          <img  src="/web/media/brand/logo-512x512.png" width="50" height="50" alt="Logo">
         </a>
         <div class="row">
           <div class="col-md-3">
@@ -173,3 +219,11 @@ if($_COOKIE['isLogged']=="False")
     <script src="js/homepage-animations.js"></script>
   </body>
 </html>
+<script>
+
+function order() {
+  alert("Successfully ordered 1 <?php   echo $row["food_name"] ; ?>")
+  location.href = "/web/pages/modifyDish.php";
+}
+
+</script>

@@ -174,8 +174,6 @@
         </div>
       </div>
       
-      <!-- GOOGLE MAP -->
-     
 
     </main>
 

@@ -5,14 +5,34 @@ $food_name = $_POST['name'];
 $food_type = $_POST['type'];
 $food_price = $_POST['price'];
 $food_subtype = $_POST['subtype'];
+$food_description = $_POST['description'];
 
 if(isset($_POST['submit']))
     {
-      $sql = "INSERT INTO food (food_name,food_price,food_type,food_subtype)VALUES('$food_name','$food_price','$food_type','$food_subtype');";
+      $sql = "INSERT INTO food (food_name,food_price,food_type,food_subtype,food_description)VALUES('$food_name','$food_price','$food_type','$food_subtype','$food_description');";
       mysqli_query($conn, $sql);
+      
+      $sql = "SELECT * FROM `food` WHERE id ='$id'";
+      $result = mysqli_query($conn, $sql);
+      $row = mysqli_fetch_assoc($result);
+      $newname = $row["id"];
+      mysqli_query($conn, $sql);
+      header("Location: /web/pages/modifyDish.php");
+      $name = str_replace(' ', '', $food_name);
+      $actual_link = "https://localhost/web/pages/qrDisplay.php?varname=$newname";
+      exec ("/xampp/phpMyAdmin/htdocs/web/qrcode/main.py $actual_link $newname" );
+      
+        exit();
     }
 
 ?>
+<style>
+textarea
+{
+  width: 300px;
+}
+
+</style>
 <!doctype html>
 <html lang="en">
   <head>
@@ -133,7 +153,9 @@ if(isset($_POST['submit']))
                 <option value="milkshakes">Milkshakes</option>
                 <option value="spirits">Spirits</option>
                 <option value="wines">Wines</option>
-                
+            </select><br>
+            <label name="description"for="textbox">Food description</label>
+            <input type="text">
 
                 
             </select>

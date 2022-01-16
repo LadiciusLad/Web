@@ -26,6 +26,7 @@
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
 include_once('/xampp/phpMyAdmin/htdocs/web/includes/dbh.php');
 
+
 ?>
 
 <!doctype html>
@@ -72,10 +73,10 @@ if($_COOKIE['isLogged']=="False")
         <div class="collapse navbar-collapse text-center" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="/web/index.php">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="/pages/food.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="/web/pages/food.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Menu
               </a>
               <div class="dropdown-menu text-center text-lg-left" aria-labelledby="navbarDropdown">
@@ -85,16 +86,16 @@ if($_COOKIE['isLogged']=="False")
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/about.html">About</a>
+              <a class="nav-link" href="/web/pages/about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/album.html">Album</a>
+              <a class="nav-link" href="/web/pages/album.html">Album</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/reservations.html">Reservations</a>
+              <a class="nav-link" href="/web/pages/reservations.html">Reservations</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/contact.html">Contact</a>
+              <a class="nav-link" href="/web/pages/contact.html">Contact</a>
             </li>
           </ul>
           <div class="ml-auto">
@@ -123,7 +124,7 @@ if($_COOKIE['isLogged']=="False")
           <span class="food-name">');echo $row["food_name"].'</span>
           <span class="editButton">
           <form action="/web/pages/displayFood.php">
-          <input type="hidden" name="varname" value="';echo$row["food_name"].'" />
+          <input type="hidden" name="varname" value="';echo$row["id"].'" />
           <input type="submit" class="button button2" value="Edit">
           </form>
         </span>
@@ -132,13 +133,12 @@ if($_COOKIE['isLogged']=="False")
                 }
             }
         ?>
-     
     </main>
 
     <footer class="page-footer">
       <div class="container">
         <a class="navbar-brand animated pulse d-block text-center m-0 p-0" href="#">
-          <img src="/media/brand/logo-512x512.png" width="50" height="50" alt="Logo">
+          <img src="/web/media/brand/logo-512x512.png" width="50" height="50" alt="Logo">
         </a>
         <div class="row">
           <div class="col-md-3">
@@ -161,7 +161,7 @@ if($_COOKIE['isLogged']=="False")
           </div>
           <div class="col-md-3 h-100 border-left-custom">
             <h5 class="page-footer-title mt-3 mt-md-0">FOLLOW US</h5>
-            <div class="mb-3">
+            <div class="mb-2">
               <a class="footer-social" href="https://github.com/LadiciusLad" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
               <a class="footer-social" href="https://github.com/LadiciusLad" aria-label="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             </div>

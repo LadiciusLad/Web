@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Abo Makkiye lkababje &amp; Kabeb 3a zaw2 zaw2ak</title>
+    <title>AUST Restaurant &amp; Bar</title>
     <!-- Web app manifest -->
     <link rel='manifest' href='manifest.json'>
     <!-- Font Awesome -->
@@ -102,8 +102,8 @@
               src="https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_2560/v1535322021/website-template-3/cover-homepage-1.jpg"
               alt="First slide">
             <div class="carousel-caption">
-              <h1 class="brand-title display-2 animated fadeInDown">Abo Makiye</h1>
-              <h4 class="brand-description animated fadeInDown">Shawarma &amp; Tawook</h4>
+              <h1 class="brand-title display-2 animated fadeInDown">AUST</h1>
+              <h4 class="brand-description animated fadeInDown">Restaurant &amp; Bar</h4>
               <a class="mt-3 btn btn-light animated fadeInUp" href="pages/reservations.html" role="button">BOOK NOW</a>
             </div>
           </div>
@@ -138,8 +138,8 @@
               src="https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_2560/v1535322195/website-template-3/cover-homepage-2.jpg"
               alt="Second slide">
             <div class="carousel-caption">
-              <h1 class="brand-title display-2 animated fadeInDown">Abo Makiye</h1>
-              <h4 class="brand-description animated fadeInDown">Shawarma &amp; Tawook</h4>
+              <h1 class="brand-title display-2 animated fadeInDown">AUST</h1>
+              <h4 class="brand-description animated fadeInDown">Restaurant &amp; Bar</h4>
               <a class="mt-3 btn btn-light animated fadeInUp" href="pages/reservations.html" role="button">BOOK NOW</a>
             </div>
           </div>
@@ -179,8 +179,8 @@
               alt="Third slide">
             <div class="container">
               <div class="carousel-caption">
-                <h1 class="brand-title display-2 animated fadeInDown">Abo Makiye</h1>
-                <h4 class="brand-description animated fadeInDown">Shawarma &amp; Tawook</h4>
+                <h1 class="brand-title display-2 animated fadeInDown">AUST</h1>
+                <h4 class="brand-description animated fadeInDown">Restaurant &amp; Bar</h4>
                 <a class="mt-3 btn btn-light animated fadeInUp" href="pages/reservations.html" role="button">BOOK NOW</a>
               </div>
             </div>
@@ -210,8 +210,8 @@
               alt="Fourth slide">
             <div class="container">
               <div class="carousel-caption">
-                <h1 class="brand-title display-2 animated fadeInDown">Abo Makiye</h1>
-                <h4 class="brand-description animated fadeInDown">Shawarma &amp; Tawook</h4>
+                <h1 class="brand-title display-2 animated fadeInDown">AUST</h1>
+                <h4 class="brand-description animated fadeInDown">Restaurant &amp; Bar</h4>
                 <a class="mt-3 btn btn-light animated fadeInUp" href="pages/reservations.html" role="button">BOOK NOW</a>
               </div>
             </div>
@@ -243,7 +243,7 @@
                 alt="Food Menu"
                 class="rounded-circle lazyload">
               <p class="homepage-menu-description">
-                Ta3a tba2at 3enna
+                Great meals made by the best cooks in the region
               </p>
               <a class="btn btn-outline-dark" href="pages/food.php" role="button">VIEW MENU</a>
             </div>
@@ -260,7 +260,7 @@
                 alt="Desserts Menu"
                 class="rounded-circle lazyload">
               <p class="homepage-menu-description">
-                Ta3a t7alla 3enna
+                A wide menu of professionally made desserts!
               </p>
               <a class="btn btn-outline-dark" href="pages/desserts.php" role="button">VIEW MENU</a>
             </div>
@@ -277,7 +277,7 @@
                 alt="Drinks Menu"
                 class="rounded-circle lazyload">
               <p class="homepage-menu-description">
-               Teshrab samm elehe
+                Proffessional baristas with the tastiest mixes
               </p>
               <a class="btn btn-outline-dark" href="pages/drinks.php" role="button">VIEW MENU</a>
             </div>
@@ -324,7 +324,7 @@
           <h3 class="special-title-2">Tradition &amp; Passion</h3>
           <div id="about-description">
             <p class="homepage-about-us-description">
-              Allah yer7amo jeddak ken yekol Salata bl 5obz
+              Discover our tradissions and more about us!
             </p>
             <a class="btn btn-outline-light" href="pages/about.html" role="button">OUR STORY</a>
           </div>
@@ -352,7 +352,7 @@
               <div class="card-body">
                 <h5 class="card-title font-weight-bold">HAPPY HOUR</h5>
                 <p class="card-text">
-                Free Drinks and halal drinks on fridays
+                  Discounted Drinks on weekends and special occasions!
                 </p>
               </div>
             </div>
@@ -371,7 +371,7 @@
               <div class="card-body">
                 <h5 class="card-title font-weight-bold">LIVE MUSIC</h5>
                 <p class="card-text">
-                  Wadih al sheikh and more
+                   Music Parties every night starting 11pm!
                 </p>
               </div>
             </div>
@@ -395,7 +395,7 @@
               <div class="card-body">
                 <h5 class="card-title font-weight-bold">STEAK BURGER</h5>
                 <p class="card-text">
-                  Atyab beef steak
+                    Try our new special Steak Burger!!
                 </p>
               </div>
             </div>
@@ -403,139 +403,6 @@
         </div>
       </div>
 
-      <!-- TESTIMONIALS -->
-      <div class="homepage-testimonials dark-overlay text-center">
-        <img
-          sizes="(max-width: 2560px) 100vw, 2560px"
-          data-srcset="
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_320/v1535898673/website-template-3/cover-wooden-texture.jpg 320w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_541/v1535898673/website-template-3/cover-wooden-texture.jpg 541w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_700/v1535898673/website-template-3/cover-wooden-texture.jpg 700w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_833/v1535898673/website-template-3/cover-wooden-texture.jpg 833w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_940/v1535898673/website-template-3/cover-wooden-texture.jpg 940w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_1036/v1535898673/website-template-3/cover-wooden-texture.jpg 1036w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_1115/v1535898673/website-template-3/cover-wooden-texture.jpg 1115w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_1194/v1535898673/website-template-3/cover-wooden-texture.jpg 1194w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_1273/v1535898673/website-template-3/cover-wooden-texture.jpg 1273w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_1340/v1535898673/website-template-3/cover-wooden-texture.jpg 1340w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_1408/v1535898673/website-template-3/cover-wooden-texture.jpg 1408w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_1473/v1535898673/website-template-3/cover-wooden-texture.jpg 1473w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_1534/v1535898673/website-template-3/cover-wooden-texture.jpg 1534w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_1594/v1535898673/website-template-3/cover-wooden-texture.jpg 1594w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_1647/v1535898673/website-template-3/cover-wooden-texture.jpg 1647w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_1708/v1535898673/website-template-3/cover-wooden-texture.jpg 1708w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_1762/v1535898673/website-template-3/cover-wooden-texture.jpg 1762w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_1812/v1535898673/website-template-3/cover-wooden-texture.jpg 1812w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_1863/v1535898673/website-template-3/cover-wooden-texture.jpg 1863w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_1913/v1535898673/website-template-3/cover-wooden-texture.jpg 1913w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_1963/v1535898673/website-template-3/cover-wooden-texture.jpg 1963w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_2011/v1535898673/website-template-3/cover-wooden-texture.jpg 2011w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_2060/v1535898673/website-template-3/cover-wooden-texture.jpg 2060w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_2111/v1535898673/website-template-3/cover-wooden-texture.jpg 2111w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_2156/v1535898673/website-template-3/cover-wooden-texture.jpg 2156w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_2199/v1535898673/website-template-3/cover-wooden-texture.jpg 2199w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_2240/v1535898673/website-template-3/cover-wooden-texture.jpg 2240w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_2282/v1535898673/website-template-3/cover-wooden-texture.jpg 2282w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_2330/v1535898673/website-template-3/cover-wooden-texture.jpg 2330w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_2373/v1535898673/website-template-3/cover-wooden-texture.jpg 2373w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_2420/v1535898673/website-template-3/cover-wooden-texture.jpg 2420w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_2465/v1535898673/website-template-3/cover-wooden-texture.jpg 2465w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_2504/v1535898673/website-template-3/cover-wooden-texture.jpg 2504w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_2550/v1535898673/website-template-3/cover-wooden-texture.jpg 2550w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_2557/v1535898673/website-template-3/cover-wooden-texture.jpg 2557w,
-            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_2560/v1535898673/website-template-3/cover-wooden-texture.jpg 2560w"
-          data-src="https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_2560/v1535898673/website-template-3/cover-wooden-texture.jpg"
-          alt=""
-          class="homepage-testimonials-bg lazyload">
-        <!--<div class="homepage-testimonials-caption">
-          <h2 class="special-title-1">TESTIMONIALS</h2>
-          <h3 class="special-title-2">What Our Customers Say</h3>
-          <div id="homepage-testimonials-carousel" class="homepage-testimonials-carousel carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img 
-                  src="https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_190/v1536003465/website-template-3/homepage-testimonials-1.jpg"
-                  srcset="
-                    https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_190/v1536003465/website-template-3/homepage-testimonials-1.jpg 1x, 
-                    https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_380/v1536003465/website-template-3/homepage-testimonials-1.jpg 2x,
-                    https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_570/v1536003465/website-template-3/homepage-testimonials-1.jpg 3x"
-                  alt="Testimonial"
-                  class="d-block mx-auto rounded-circle img-thumbnail">
-                <blockquote>
-                  <p class="mb-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Aenean et consequat augue. Morbi condimentum interdum magna 
-                    sit amet pulvinar.
-                  </p>
-                  <footer class="blockquote-footer">Michael Freemon, <cite title="Source Title"><a href="https://github.com/LadiciusLad">Trip Advisor</a></cite></footer>
-                </blockquote>
-              </div>
-              <div class="carousel-item">
-                <img 
-                  src="https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_190/v1536003765/website-template-3/homepage-testimonials-2.jpg"
-                  srcset="
-                    https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_190/v1536003765/website-template-3/homepage-testimonials-2.jpg 1x, 
-                    https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_380/v1536003765/website-template-3/homepage-testimonials-2.jpg 2x,
-                    https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_570/v1536003765/website-template-3/homepage-testimonials-2.jpg 3x"
-                  alt="Testimonial"
-                  class="d-block mx-auto rounded-circle img-thumbnail">
-                <blockquote>
-                  <p class="mb-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Aenean et consequat augue. Morbi condimentum interdum magna 
-                    sit amet pulvinar.
-                  </p>
-                  <footer class="blockquote-footer">Marie Lu, <cite title="Source Title"><a href="https://github.com/LadiciusLad">Trip Advisor</a></cite></footer>
-                </blockquote>
-              </div>
-              <div class="carousel-item">
-                <img 
-                  src="https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_190/v1536003858/website-template-3/homepage-testimonials-3.jpg"
-                  srcset="
-                    https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_190/v1536003858/website-template-3/homepage-testimonials-3.jpg 1x, 
-                    https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_380/v1536003858/website-template-3/homepage-testimonials-3.jpg 2x,
-                    https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_570/v1536003858/website-template-3/homepage-testimonials-3.jpg 3x"
-                  alt="Testimonial"
-                  class="d-block mx-auto rounded-circle img-thumbnail">
-                <blockquote>
-                  <p class="mb-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Aenean et consequat augue. Morbi condimentum interdum magna 
-                    sit amet pulvinar.
-                  </p>
-                  <footer class="blockquote-footer">Jason Wu, <cite title="Source Title"><a href="https://github.com/LadiciusLad">Trip Advisor</a></cite></footer>
-                </blockquote>
-              </div>
-              <div class="carousel-item">
-                <img 
-                  src="https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_190/v1536003941/website-template-3/homepage-testimonials-4.jpg"
-                  srcset="
-                    https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_190/v1536003941/website-template-3/homepage-testimonials-4.jpg 1x, 
-                    https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_380/v1536003941/website-template-3/homepage-testimonials-4.jpg 2x,
-                    https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_570/v1536003941/website-template-3/homepage-testimonials-4.jpg 3x"
-                  alt="Testimonial"
-                  class="d-block mx-auto rounded-circle img-thumbnail">
-                <blockquote>
-                  <p class="mb-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Aenean et consequat augue. Morbi condimentum interdum magna 
-                    sit amet pulvinar.
-                  </p>
-                  <footer class="blockquote-footer">Emily Henderson, <cite title="Source Title"><a href="https://github.com/LadiciusLad">Trip Advisor</a></cite></footer>
-                </blockquote>
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#homepage-testimonials-carousel" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#homepage-testimonials-carousel" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div> 
-        </div>-->
-      </div>
 
 
     </main>

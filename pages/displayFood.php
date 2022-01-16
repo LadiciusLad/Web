@@ -29,14 +29,36 @@ $food_name = $_POST['name'];
 $food_type = $_POST['type'];
 $food_price = $_POST['price'];
 $food_subtype = $_POST['subtype'];
-$name = $_GET['varname'];
+$food_descritpion = $_POST['description'];
+$id = $_GET['varname'];
+$sql = "SELECT * FROM `food` WHERE id ='$id'";
+$result = mysqli_query($conn, $sql);
+$row = mysqli_fetch_assoc($result);
+$newname = $row["id"];
+
 
 
 if(isset($_POST['submit']))
     {
-      $sql = "UPDATE `food` SET `food_name` = '$food_name', `food_price` = '$food_price', `food_type` = '$food_type', `food_subtype` = '$food_subtype' WHERE `food_name`= '$name';";
+      
+      $sql = "UPDATE `food` SET `food_name` = '$food_name', `food_price` = '$food_price', `food_type` = '$food_type', `food_subtype` = '$food_subtype',`food_description`='$food_descritpion' WHERE `id`= '$id';";
       mysqli_query($conn, $sql);
       header("Location: /web/pages/modifyDish.php");
+      $name = str_replace(' ', '', $name);
+      $actual_link = "https://localhost/web/pages/qrDisplay.php?varname=$id";
+      exec ("/xampp/phpMyAdmin/htdocs/web/qrcode/main.py $actual_link $newname" );
+      
+        exit();
+    }
+    if(isset($_POST['delete']))
+    {
+      
+      $sql = "DELETE FROM `food` WHERE  `id`= '$id';";
+      mysqli_query($conn, $sql);
+      header("Location: /web/pages/modifyDish.php");
+      $actual_link = "https://localhost/web/pages/qrDisplay.php?varname=$id";
+      exec ("/xampp/phpMyAdmin/htdocs/web/qrcode/main.py $actual_link $newname" );
+      
         exit();
     }
 
@@ -46,7 +68,7 @@ if(isset($_POST['submit']))
            
             
 
-            $sql = "SELECT * FROM `food` WHERE food_name ='$name'";
+            $sql = "SELECT * FROM `food` WHERE id ='$id'";
             $result = mysqli_query($conn, $sql);
             $resultCheck = mysqli_num_rows($result);
             if($resultCheck > 0)
@@ -64,7 +86,7 @@ if(isset($_POST['submit']))
                                 <div class="form-row">
                                 <div class="form-group col-md-5">
                                     <label for="inputPrice">Price:</label>
-                                    <input type="number" name="price" class="form-control" id="inputPrice" value="';echo $row["food_price"].' $">
+                                    <input type="number" name="price" class="form-control" id="inputPrice" value="';echo $row["food_price"].'">
                                 </div>
                                 </div>
                                 <div class="form-group col-md-5">
@@ -98,12 +120,15 @@ if(isset($_POST['submit']))
                                     <option value="milkshakes">Milkshakes</option>
                                     <option value="spirits">Spirits</option>
                                     <option value="wines">Wines</option>
-                                    
+                                  </select><br>
+                                  <label for="tex">Food Description</label>
+                                  <input type="text" name="description"value="';echo $row["food_description"].'">
 
                                     
                                 </select>
                                 </div>
                                 <button type="submit" value = "SUBMIT" name="submit" class="btn btn-light">Edit Dish</button>
+                                <button type="submit" value = "DELETE" name="delete" class="btn btn-light">Delete Dish</button>
                             </form>' ; 
                 }
             }
@@ -144,7 +169,7 @@ if(isset($_POST['submit']))
         <div class="collapse navbar-collapse text-center" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="/index.php">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="/web/index.php">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="/pages/food.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -154,20 +179,19 @@ if(isset($_POST['submit']))
                 <a class="dropdown-item" href="/pages/food.php">Food</a>
                 <a class="dropdown-item" href="/pages/desserts.php">Desserts</a>
                 <a class="dropdown-item" href="/pages/drinks.php">Drinks</a>
-                <a class="dropdown-item" href="/pages/showfood.php">Show Food</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/about.html">About</a>
+              <a class="nav-link" href="/web/pages/about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/album.html">Album</a>
+              <a class="nav-link" href="/web/pages/album.html">Album</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/reservations.html">Reservations</a>
+              <a class="nav-link" href="/web/pages/reservations.html">Reservations</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/contact.html">Contact</a>
+              <a class="nav-link" href="/web/pages/contact.html">Contact</a>
             </li>
           </ul>
           <div class="ml-auto">
@@ -180,28 +204,6 @@ if(isset($_POST['submit']))
       </nav>
     </header>
     <main>
-    <?php
-            
-            $sql = "SELECT * FROM `food` WHERE food_name ='';";
-            $result = mysqli_query($conn, $sql);
-            $resultCheck = mysqli_num_rows($result);
-            if($resultCheck > 0)
-            {
-                while($row = mysqli_fetch_assoc($result))
-                {
-                    echo('
-        <hr class="food-horizontal-rule">
-        <div class="col-md-9">
-        <h3 class="food-title">
-          <span class="food-name">');echo $row["food_name"].'</span>
-          <span class="editButton">
-          <a href=../pages/desserts.php><input type=button class="button button2" value="Edit"></a></span>
-        </h3>
-      </div>';
-                }
-            }
-        ?>
-     
     </main>
 
     <footer class="page-footer">

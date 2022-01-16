@@ -150,22 +150,14 @@ include_once('/xampp/phpMyAdmin/htdocs/web/includes/dbh.php');
                         echo('<hr class="food-horizontal-rule">
                         <div class="row align-items-center menu-item">
                           <div class="col-md-3 food-image">
-                          <img 
-                          data-src="https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_150/v1537898527/website-template-3/cakes.jpg"
-                          data-srcset="
-                            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_150/v1537898527/website-template-3/cakes.jpg 1x,
-                            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_300/v1537898527/website-template-3/cakes.jpg 2x"
-                          alt="Cake"
-                          class="rounded-circle lazyload">
-                          </div><div class="col-md-9">
+                          <img class="qrcode" src="/web/qrcode/');echo$row["id"].'.jpg" width="200" height="200"> 
+                          </div></div><div class="col-md-9">
             <h3 class="food-title">
-              <span class="food-name">');echo $row["food_name"].'</span>
+              <span class="food-name"><a href="/web/pages/qrDisplay.php?varname=';echo $row["id"].'" >';echo $row["food_name"].'</a></span>
               <span class="food-price float-right">';echo $row["food_price"].' $</span>
             </h3>
             <p class="food-ingredients">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam 
-              at gravida lacus. Suspendisse laoreet ultrices ex, quis 
-              efficitur justo rhoncus sit amet.
+            ';echo $row["food_description"].'
             </p>
           </div>';
                     }
@@ -190,22 +182,14 @@ include_once('/xampp/phpMyAdmin/htdocs/web/includes/dbh.php');
                         echo('<hr class="food-horizontal-rule">
                         <div class="row align-items-center menu-item">
                           <div class="col-md-3 food-image">
-                          <img 
-                          data-src="https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_150/v1537898674/website-template-3/cookies.jpg"
-                          data-srcset="
-                            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_150/v1537898674/website-template-3/cookies.jpg 1x,
-                            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_300/v1537898674/website-template-3/cookies.jpg 2x"
-                          alt="Cookie"
-                          class="rounded-circle lazyload">
-                          </div><div class="col-md-9">
-            <h3 class="food-title">
-              <span class="food-name">');echo $row["food_name"].'</span>
-              <span class="food-price float-right">';echo $row["food_price"].' $</span>
-            </h3>
+                          <img class="qrcode" src="/web/qrcode/');echo$row["id"].'.jpg" width="200" height="200"> 
+                        </div></div><div class="col-md-9">
+          <h3 class="food-title">
+            <span class="food-name"><a href="/web/pages/qrDisplay.php?varname=';echo $row["id"].'" >';echo $row["food_name"].'</a></span>
+            <span class="food-price float-right">';echo $row["food_price"].' $</span>
+          </h3>
             <p class="food-ingredients">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam 
-              at gravida lacus. Suspendisse laoreet ultrices ex, quis 
-              efficitur justo rhoncus sit amet.
+            ';echo $row["food_description"].'
             </p>
           </div>';
                     }
@@ -230,22 +214,14 @@ include_once('/xampp/phpMyAdmin/htdocs/web/includes/dbh.php');
                         echo('<hr class="food-horizontal-rule">
                         <div class="row align-items-center menu-item">
                           <div class="col-md-3 food-image">
-                          <img 
-                          data-src="https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_150/v1537898921/website-template-3/frozen-desserts.jpg"
-                          data-srcset="
-                            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_150/v1537898921/website-template-3/frozen-desserts.jpg 1x,
-                            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_300/v1537898921/website-template-3/frozen-desserts.jpg 2x"
-                          alt="Frozen dessert"
-                          class="rounded-circle lazyload">
-                          </div><div class="col-md-9">
-            <h3 class="food-title">
-              <span class="food-name">');echo $row["food_name"].'</span>
-              <span class="food-price float-right">';echo $row["food_price"].' $</span>
-            </h3>
+                          <img class="qrcode" src="/web/qrcode/');echo$row["id"].'.jpg" width="200" height="200"> 
+                        </div></div><div class="col-md-9">
+          <h3 class="food-title">
+            <span class="food-name"><a href="/web/pages/qrDisplay.php?varname=';echo $row["id"].'" >';echo $row["food_name"].'</a></span>
+            <span class="food-price float-right">';echo $row["food_price"].' $</span>
+          </h3>
             <p class="food-ingredients">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam 
-              at gravida lacus. Suspendisse laoreet ultrices ex, quis 
-              efficitur justo rhoncus sit amet.
+            ';echo $row["food_description"].'
             </p>
           </div>';
                     }
@@ -271,22 +247,14 @@ include_once('/xampp/phpMyAdmin/htdocs/web/includes/dbh.php');
                         echo('<hr class="food-horizontal-rule">
                         <div class="row align-items-center menu-item">
                           <div class="col-md-3 food-image">
-                          <img 
-                          data-src="https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_150/v1537899340/website-template-3/pastries.jpg"
-                          data-srcset="
-                            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_150/v1537899340/website-template-3/pastries.jpg 1x,
-                            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_300/v1537899340/website-template-3/pastries.jpg 2x"
-                          alt="Pastry"
-                          class="rounded-circle lazyload">
-                          </div><div class="col-md-9">
-            <h3 class="food-title">
-              <span class="food-name">');echo $row["food_name"].'</span>
-              <span class="food-price float-right">';echo $row["food_price"].' $</span>
-            </h3>
+                          <img class="qrcode" src="/web/qrcode/');echo$row["id"].'.jpg" width="200" height="200"> 
+                        </div></div><div class="col-md-9">
+          <h3 class="food-title">
+            <span class="food-name"><a href="/web/pages/qrDisplay.php?varname=';echo $row["id"].'" >';echo $row["food_name"].'</a></span>
+            <span class="food-price float-right">';echo $row["food_price"].' $</span>
+          </h3>
             <p class="food-ingredients">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam 
-              at gravida lacus. Suspendisse laoreet ultrices ex, quis 
-              efficitur justo rhoncus sit amet.
+            ';echo $row["food_description"].'
             </p>
           </div>';
                     }
@@ -311,22 +279,14 @@ include_once('/xampp/phpMyAdmin/htdocs/web/includes/dbh.php');
                         echo('<hr class="food-horizontal-rule">
                         <div class="row align-items-center menu-item">
                           <div class="col-md-3 food-image">
-                          <img 
-                          data-src="https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_150/v1537899494/website-template-3/puddings.jpg"
-                          data-srcset="
-                            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_150/v1537899494/website-template-3/puddings.jpg 1x,
-                            https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_300/v1537899494/website-template-3/puddings.jpg 2x"
-                          alt="Pudding"
-                          class="rounded-circle lazyload">
-                          </div><div class="col-md-9">
-            <h3 class="food-title">
-              <span class="food-name">');echo $row["food_name"].'</span>
-              <span class="food-price float-right">';echo $row["food_price"].' $</span>
-            </h3>
+                          <img class="qrcode" src="/web/qrcode/');echo$row["id"].'.jpg" width="200" height="200"> 
+                        </div></div><div class="col-md-9">
+          <h3 class="food-title">
+            <span class="food-name"><a href="/web/pages/qrDisplay.php?varname=';echo $row["id"].'" >';echo $row["food_name"].'</a></span>
+            <span class="food-price float-right">';echo $row["food_price"].' $</span>
+          </h3>
             <p class="food-ingredients">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam 
-              at gravida lacus. Suspendisse laoreet ultrices ex, quis 
-              efficitur justo rhoncus sit amet.
+            ';echo $row["food_description"].'
             </p>
           </div>';
                     }
