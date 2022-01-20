@@ -41,11 +41,11 @@ $newname = $row["id"];
 if(isset($_POST['submit']))
     {
       
-      $sql = "UPDATE `food` SET `food_name` = '$food_name', `food_price` = '$food_price', `food_type` = '$food_type', `food_subtype` = '$food_subtype',`food_description`='$food_descritpion' WHERE `id`= '$id';";
+      $sql = "UPDATE `food` SET `food_name` = '$food_name', `food_price` = '$food_price', `food_type` = '$food_type', `food_subtype` = '$food_subtype',`food_ingredients`='$food_descritpion' WHERE `id`= '$id';";
       mysqli_query($conn, $sql);
       header("Location: /web/pages/modifyDish.php");
       $name = str_replace(' ', '', $name);
-      $actual_link = "https://localhost/web/pages/qrDisplay.php?varname=$id";
+      $actual_link = "localhost/web/pages/qrDisplay.php?varname=$id";
       exec ("/xampp/phpMyAdmin/htdocs/web/qrcode/main.py $actual_link $newname" );
       
         exit();
@@ -122,7 +122,7 @@ if(isset($_POST['submit']))
                                     <option value="wines">Wines</option>
                                   </select><br>
                                   <label for="tex">Food Description</label>
-                                  <input type="text" name="description"value="';echo $row["food_description"].'">
+                                  <input type="text" name="description"value="';echo $row["food_ingredients"].'">
 
                                     
                                 </select>

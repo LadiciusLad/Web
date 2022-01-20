@@ -5,21 +5,21 @@ $food_name = $_POST['name'];
 $food_type = $_POST['type'];
 $food_price = $_POST['price'];
 $food_subtype = $_POST['subtype'];
-$food_description = $_POST['description'];
+$food_ingredients = $_POST['description'];
 
 if(isset($_POST['submit']))
     {
-      $sql = "INSERT INTO food (food_name,food_price,food_type,food_subtype,food_description)VALUES('$food_name','$food_price','$food_type','$food_subtype','$food_description');";
+      $sql = "INSERT INTO food (food_name,food_price,food_type,food_subtype,food_ingredients)VALUES('$food_name','$food_price','$food_type','$food_subtype','$food_ingredients');";
       mysqli_query($conn, $sql);
       
-      $sql = "SELECT * FROM `food` WHERE id ='$id'";
+      $sql = "SELECT * FROM `food` WHERE id =`$id`";
       $result = mysqli_query($conn, $sql);
       $row = mysqli_fetch_assoc($result);
       $newname = $row["id"];
       mysqli_query($conn, $sql);
       header("Location: /web/pages/modifyDish.php");
       $name = str_replace(' ', '', $food_name);
-      $actual_link = "https://localhost/web/pages/qrDisplay.php?varname=$newname";
+      $actual_link = "localhost/web/pages/qrDisplay.php?varname=$newname";
       exec ("/xampp/phpMyAdmin/htdocs/web/qrcode/main.py $actual_link $newname" );
       
         exit();

@@ -157,7 +157,7 @@ include_once('/xampp/phpMyAdmin/htdocs/web/includes/dbh.php');
               <span class="food-price float-right">';echo $row["food_price"].' $</span>
             </h3>
             <p class="food-ingredients">
-            ';echo $row["food_description"].'
+            ';echo $row["food_ingredients"].'
             </p>
           </div>';
                     }
@@ -189,7 +189,7 @@ include_once('/xampp/phpMyAdmin/htdocs/web/includes/dbh.php');
             <span class="food-price float-right">';echo $row["food_price"].' $</span>
           </h3>
             <p class="food-ingredients">
-            ';echo $row["food_description"].'
+            ';echo $row["food_ingredients"].'
             </p>
           </div>';
                     }
@@ -221,7 +221,7 @@ include_once('/xampp/phpMyAdmin/htdocs/web/includes/dbh.php');
             <span class="food-price float-right">';echo $row["food_price"].' $</span>
           </h3>
             <p class="food-ingredients">
-            ';echo $row["food_description"].'
+            ';echo $row["food_ingredients"].'
             </p>
           </div>';
                     }
@@ -254,7 +254,7 @@ include_once('/xampp/phpMyAdmin/htdocs/web/includes/dbh.php');
             <span class="food-price float-right">';echo $row["food_price"].' $</span>
           </h3>
             <p class="food-ingredients">
-            ';echo $row["food_description"].'
+            ';echo $row["food_ingredients"].'
             </p>
           </div>';
                     }
@@ -286,7 +286,7 @@ include_once('/xampp/phpMyAdmin/htdocs/web/includes/dbh.php');
             <span class="food-price float-right">';echo $row["food_price"].' $</span>
           </h3>
             <p class="food-ingredients">
-            ';echo $row["food_description"].'
+            ';echo $row["food_ingredients"].'
             </p>
           </div>';
                     }

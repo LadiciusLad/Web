@@ -45,7 +45,7 @@ $food_name = $_POST['name'];
 $food_type = $_POST['type'];
 $food_price = $_POST['price'];
 $food_subtype = $_POST['subtype'];
-$food_description = $_POST['description'];
+$food_ingredients = $_POST['description'];
 $id = $_GET['varname'];
 
 
@@ -141,7 +141,7 @@ $row = mysqli_fetch_assoc($result);
 <h4>Price :  <?php echo $row["food_price"];?> $</h4><br>
 <h4>Type : <?php echo $row["food_type"];?></h4><br>
 <h4>Sub Type : <?php echo $row["food_subtype"];?></h4><br>
-<h4>Description : <?php echo $row["food_description"];?></h4><br>
+<h4>Description : <?php echo $row["food_ingredients"];?></h4><br>
 <img class="qrcode"src="/web/qrcode/<?php echo$row["id"]?>.jpg" width="300" height="300"><br> 
 <button class="button button2" id="oderbtn" onclick="order()">Order</button>
 
@@ -222,8 +222,14 @@ $row = mysqli_fetch_assoc($result);
 <script>
 
 function order() {
-  alert("Successfully ordered 1 <?php   echo $row["food_name"] ; ?>")
-  location.href = "/web/pages/modifyDish.php";
+  alert("Successfully ordered 1 <?php echo $row["food_name"] ; ?>")
+  <?php 
+       
+       $sql = "UPDATE `food` SET `food_orders` = `food_orders` + 1 WHERE `id` = $id;";
+       mysqli_query($conn, $sql);
+       echo("window.history.go(-1);")
+
+  ?>
 }
 
 </script>

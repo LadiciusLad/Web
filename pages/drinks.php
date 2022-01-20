@@ -181,9 +181,7 @@ include_once('/xampp/phpMyAdmin/htdocs/web/includes/dbh.php');
       <span class="food-price float-right">';echo $row["food_price"].' $</span>
     </h3>
                         <p class="food-ingredients">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam 
-                          at gravida lacus. Suspendisse laoreet ultrices ex, quis 
-                          efficitur justo rhoncus sit amet.
+                        ';echo $row["food_ingredients"].'
                         </p>
            </div>';
                 }
@@ -218,9 +216,7 @@ include_once('/xampp/phpMyAdmin/htdocs/web/includes/dbh.php');
       <span class="food-price float-right">';echo $row["food_price"].' $</span>
     </h3>
         <p class="food-ingredients">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam 
-          at gravida lacus. Suspendisse laoreet ultrices ex, quis 
-          efficitur justo rhoncus sit amet.
+        ';echo $row["food_ingredients"].'
         </p>
       </div>';
                 }
@@ -252,9 +248,7 @@ include_once('/xampp/phpMyAdmin/htdocs/web/includes/dbh.php');
       <span class="food-price float-right">';echo $row["food_price"].' $</span>
     </h3>
         <p class="food-ingredients">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam 
-          at gravida lacus. Suspendisse laoreet ultrices ex, quis 
-          efficitur justo rhoncus sit amet.
+        ';echo $row["food_ingredients"].'
         </p>
       </div>';
                 }
@@ -286,9 +280,7 @@ include_once('/xampp/phpMyAdmin/htdocs/web/includes/dbh.php');
       <span class="food-price float-right">';echo $row["food_price"].' $</span>
     </h3>
         <p class="food-ingredients">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam 
-          at gravida lacus. Suspendisse laoreet ultrices ex, quis 
-          efficitur justo rhoncus sit amet.
+        ';echo $row["food_ingredients"].'
         </p>
       </div>';
                 }
@@ -320,9 +312,7 @@ include_once('/xampp/phpMyAdmin/htdocs/web/includes/dbh.php');
       <span class="food-price float-right">';echo $row["food_price"].' $</span>
     </h3>
         <p class="food-ingredients">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam 
-          at gravida lacus. Suspendisse laoreet ultrices ex, quis 
-          efficitur justo rhoncus sit amet.
+        ';echo $row["food_ingredients"].'
         </p>
       </div>';
                 }
@@ -354,9 +344,7 @@ include_once('/xampp/phpMyAdmin/htdocs/web/includes/dbh.php');
       <span class="food-price float-right">';echo $row["food_price"].' $</span>
     </h3>
         <p class="food-ingredients">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam 
-          at gravida lacus. Suspendisse laoreet ultrices ex, quis 
-          efficitur justo rhoncus sit amet.
+        ';echo $row["food_ingredients"].'
         </p>
       </div>';
                 }
